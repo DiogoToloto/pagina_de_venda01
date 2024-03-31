@@ -162,17 +162,20 @@ main > p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    text-align: center;
+    gap: 25px;
     position: relative;
-    background-color: #d29a31;
-    height: 300px;
+    background-color: rgb(221, 178, 99);
+    height: 350px;
     margin-left: -20px;
     margin-right: -20px;
+    padding: 30px;
 }
 
 .oportunidade_unica > h1 {
     font-family: var(--font_principal);
     font-weight: 900;
+    font-size: 2.2rem;
 }
 
 .transparent2 {
@@ -201,10 +204,6 @@ main > p {
     background-image: linear-gradient(to left, #323232, #000);
 }
 
-.opacidade {
-    background-color: #d29a31;
-}
-
 .div_selos {
     display: flex;
     flex-direction: column;
@@ -228,6 +227,24 @@ main > p {
     position: relative;
     top: -35px;
     width: 100%;
+}
+
+.selos > h1 {
+    font-family: var(--font_principal);
+    font-size: 2.5rem;
+    color: #fff;
+    margin: -20px 0px 20px 0px;
+}
+
+.selos > p {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.transparent3 {
+    color:rgba(0,0,0,0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
 }
 
 .div_depoimentos {
@@ -255,3 +272,4 @@ main > p {
 .icone_depoimentos {
     width: 60px;
 }
+
