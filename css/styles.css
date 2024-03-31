@@ -129,6 +129,7 @@ main {
     text-align: center;
     gap: 30px;
     padding: 0px 20px;
+    box-shadow: 1px -30px 35px black;
 }
 
 main > .foto1_main {
@@ -198,4 +199,59 @@ main > p {
 
 .btn_2:hover {
     background-image: linear-gradient(to left, #323232, #000);
+}
+
+.opacidade {
+    background-color: #d29a31;
+}
+
+.div_selos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 460px;
+    width: 100%;
+}
+
+.selos {
+    background-color: #32323237;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 95%;
+    border-radius: 50px;
+    margin: 20px 0px;
+}
+
+.selos > img {
+    position: relative;
+    top: -35px;
+    width: 100%;
+}
+
+.div_depoimentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    background-color: #474747;   
+    width: 100%;
+    height: 700px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.div_depoimentos > h1 {
+    color: #d29a31;
+}
+
+.div_depoimentos > p {
+    color: #fff;
+}
+
+.icone_depoimentos {
+    width: 60px;
 }
