@@ -165,8 +165,11 @@ main > p {
     align-items: center;
     text-align: center;
     gap: 25px;
+    background-image: url(../assets/mulher_loira.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    background-color: rgb(221, 178, 99);
     height: 350px;
     margin-left: -20px;
     margin-right: -20px;
@@ -216,12 +219,14 @@ main > p {
 }
 
 .selos {
-    background-color: #32323237;
+    background-image: url(../assets/SL_0210121_40570_75.jpg) ;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 350px;
     width: 95%;
     border-radius: 50px;
     margin: 20px 0px;
+    padding: 0px 15px;
 }
 
 .selos > img {
@@ -299,10 +304,11 @@ main > p {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 10px;
     border-radius: 10px;
     box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.3);
     width: 90%;
-    height: 580px;
+    height: 650px;
 }
 
 .produto_1 > picture {
@@ -322,6 +328,10 @@ main > p {
     margin-top: 20px;
 }
 
+.produto_1 > p {
+    color: #fff;
+}
+
 .produto_1 > .preco {
     color: var(--cor_principal);
     font-family: var(--font_principal);
@@ -331,6 +341,7 @@ main > p {
 
 .selo_bancario {
     margin-top: 70px;
+    width: 95%;
 }
 
 .produto_2 {
@@ -338,10 +349,40 @@ main > p {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 10px;
     border-radius: 10px;
-    box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.3);
+    box-shadow: 1px 1px 30px var(--cor_principal);
     width: 90%;
-    height: 580px;
+    height: 680px;
+    margin-top: 200px;
+    padding: 0px 10px;
+}
+
+.produto_2 > picture {
+    height: 200px;
+}
+
+.produto_2 > h1 {
+    font-family: var(--font_principal);
+    font-weight: 900;
+    font-size: 2.2rem;
+    color: var(--cor_principal);
+    margin-top: 20px;
+}
+
+.produto_2 > .preco {
+    color: var(--cor_principal);
+    font-family: var(--font_principal);
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.produto_2 > p {
+    color: #fff;
+}
+
+.preco_cor_principal {
+    color: var(--cor_principal);
 }
 
 .produto_3 {
@@ -349,8 +390,25 @@ main > p {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 10px;
     border-radius: 10px;
     box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.3);
     width: 90%;
-    height: 580px;
+    height: 650px;
+    margin-top: 100px;
+}
+
+.produto_3 > h1 {
+    color: var(--cor_principal);
+}
+
+.produto_3 > .preco {
+    color: var(--cor_principal);
+    font-family: var(--font_principal);
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.produto_3 > p {
+    color: #fff;
 }
