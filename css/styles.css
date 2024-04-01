@@ -2,6 +2,7 @@
 
 :root {
     --font_principal: "Poppins", sans-serif;
+    --cor_principal: #e3ae4c;
 }
 
 @keyframes animacao {
@@ -63,7 +64,7 @@ header > h2 {
 
 header > .link > h1 {
     font-size: 2.3rem;
-    color: #e3ae4c;
+    color: var(--cor_principal);
     font-family: var(--font_principal);
     font-weight: 900;
     font-style: normal;
@@ -73,7 +74,7 @@ header > .link > h1 {
 .transparent {
     color:rgba(0,0,0,0);
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #e3ae4c;
+    -webkit-text-stroke-color: var(--cor_principal);
 }
 
 .link {
@@ -108,7 +109,7 @@ header > p {
     background-image: linear-gradient(to left,#e3b869,#d29a31);
     color: #fff;
     margin-top: 20px;
-    border: 1px solid #e3ae4c;
+    border: 1px solid var(--cor_principal);
     box-shadow: 0px 15px 20px #dca745c2;
     cursor: pointer;
     animation-name: animacao;
@@ -139,7 +140,7 @@ main > .foto1_main {
 main > h1 , h2{
     font-family: var(--font_principal);
     font-size: 2.2rem;
-    color: #e3ae4c;
+    color: var(--cor_principal);
 }
 
 main > p {
@@ -256,13 +257,12 @@ main > p {
     text-align: center;
     background-color: #474747;   
     width: 100%;
-    height: 700px;
-    padding-left: 20px;
-    padding-right: 20px;
+    height: 800px;
+    padding: 20px;
 }
 
 .div_depoimentos > h1 {
-    color: #d29a31;
+    color: var(--cor_principal);
 }
 
 .div_depoimentos > p {
@@ -273,3 +273,84 @@ main > p {
     width: 60px;
 }
 
+.div_produtos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.div_produtos > h1 {
+    font-family: var(--font_principal);
+    font-weight: 900;
+    font-size: 2.2rem;
+    color: var(--cor_principal);
+}
+
+.div_produtos > p {
+    color: #fff;
+    margin-bottom: 200px;
+}
+
+.produto_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.3);
+    width: 90%;
+    height: 580px;
+}
+
+.produto_1 > picture {
+    height: 200px;
+}
+
+.foto_produto_1 {
+    position: relative;
+    top: -155px;
+}
+
+.produto_1 > h1 {
+    font-family: var(--font_principal);
+    font-weight: 900;
+    font-size: 2.2rem;
+    color: var(--cor_principal);
+    margin-top: 20px;
+}
+
+.produto_1 > .preco {
+    color: var(--cor_principal);
+    font-family: var(--font_principal);
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.selo_bancario {
+    margin-top: 70px;
+}
+
+.produto_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.3);
+    width: 90%;
+    height: 580px;
+}
+
+.produto_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.3);
+    width: 90%;
+    height: 580px;
+}
