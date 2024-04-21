@@ -494,16 +494,26 @@ main {
 
 #accordionFlushExample {
     width: 90%;
+    border: 1px solid #b98b35;
 }
 
 .accordion-button {
-    background-color: var(--cor_principal);
+    background-color: #b98b35;
     color: #fff;
 }
 
 .accordion-button:not(.collapsed) {
     background-color: var(--cor_principal);
     color: #fff;
+}
+
+div .contato {
+    padding: 20px 0px;
+}
+
+div .contato > p {
+    color: #fff;
+    font-size: 0.8rem;
 }
 
 footer {
