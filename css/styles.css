@@ -330,6 +330,7 @@ main > p {
     align-items: center;
     text-align: center;
     border-radius: 10px;
+    border: 1px solid #fff;
     box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.3);
     width: 90%;
     height: 620px;
@@ -374,7 +375,8 @@ main > p {
     align-items: center;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 1px 1px 30px var(--cor_principal);
+    box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.3);
+    border: 1px solid var(--cor_principal);
     width: 90%;
     height: 705px;
     margin-top: 200px;
@@ -416,6 +418,7 @@ main > p {
     text-align: center;
     border-radius: 10px;
     box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.3);
+    border: 1px solid #fff;
     width: 90%;
     height: 650px;
     margin-top: 100px;
@@ -438,6 +441,27 @@ main > p {
 
 .produto_3 > p {
     color: #fff;
+}
+
+.btn_1_compra {
+    font-size: 0.9rem;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    background-image: linear-gradient(to left,#e3b869,#d29a31);
+    color: #fff;
+    
+    border: 1px solid var(--cor_principal);
+    box-shadow: 0px 15px 20px #dca745c2;
+    cursor: pointer;
+    animation-name: animacao;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.btn_1_compra:hover {
+    background-image: linear-gradient(to left, #d29a31,#e3b869);
 }
 
 #div_perguntas_frequentes {
