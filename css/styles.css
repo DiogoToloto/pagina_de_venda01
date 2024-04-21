@@ -35,7 +35,7 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    background-color: #000000;
+    background-color: var(--cor_principal);
 }
 
 body::-webkit-scrollbar {
@@ -142,22 +142,32 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 30px;
-    box-shadow: 1px -30px 35px black;
+    
+    box-shadow: 1px -30px 35px rgb(0, 0, 0);
 }
 
-main > .foto1_main {
+#container_main {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 0px 20px;
+}
+
+#container_main > .foto1_main {
     margin-top: 100px;
 }
 
-main > h1 , h2{
+#container_main > h1 , h2{
     font-family: var(--font_principal);
     font-size: 2.2rem;
     font-weight: 900;
     color: var(--cor_principal);
 }
 
-main > p {
+#container_main > p {
     font-family: var(--font_principal);
     color: #fff;
 }
@@ -184,9 +194,7 @@ main > p {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    position: relative;
     height: 400px;
-    padding-left: -30px;
 }
 
 .oportunidade_unica > h1 {
@@ -234,6 +242,7 @@ main > p {
     text-align: center;
     height: 450px;
     width: 100%;
+    background-color: #000;
 }
 
 .div_selos > section > h1 {
@@ -302,7 +311,8 @@ main > p {
 }
 
 .div_produtos {
-    background-color: #000;
+    position: relative;
+    background-color: #000000;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -310,6 +320,7 @@ main > p {
     text-align: center;
     gap: 10px;
     border-radius: 14em/1em;
+    padding-top: 20px;
 }
 
 .div_produtos > h1 {
@@ -465,6 +476,51 @@ main > p {
 }
 
 #div_perguntas_frequentes {
-    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor_principal);
     width: 100%;
+}
+
+#div_perguntas_frequentes > h1{
+    font-family: var(--font_principal);
+    font-size: 2rem;
+    font-weight: 900;
+    color: #fff;
+    padding-top: 20px;
+}
+
+#accordionFlushExample {
+    width: 90%;
+}
+
+.accordion-button {
+    background-color: var(--cor_principal);
+    color: #fff;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--cor_principal);
+    color: #fff;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    gap: 10px;
+    padding: 30px 0px;
+    font-size: 0.7rem;
+}
+
+footer > picture {
+    text-align: center;
+}
+
+footer > picture > img {
+    padding-bottom: 20px;
 }
