@@ -9,6 +9,7 @@
     0%{transform: scale(1);}
     
     100%{transform: scale(1.1);}
+
 }
 
 @keyframes texto{
@@ -29,6 +30,7 @@
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
     scrollbar-color: rgba(red, green, blue, alpha) light-color;
+    box-sizing: border-box;
 }
 
 body {
@@ -59,14 +61,14 @@ header {
     align-items: center;
     text-align: center;
     gap: 15px;
-    padding: 0px 20px;
+    padding: 40px 35px 0px;
 }
 
 header > picture {
     margin-top: 30px;
 }
 
-header > h2 {
+header > div > h2 {
     font-family: var(--font_principal);
     font-size: 1rem;
     font-weight: 200;
@@ -74,13 +76,11 @@ header > h2 {
     color: #fff;
 }
 
-header > .link > h1 {
-    font-size: 2.3rem;
+header > #header-container > div > h1 {
+    font-size: 2.2rem;
     color: var(--cor_principal);
     font-family: var(--font_principal);
     font-weight: 900;
-    font-style: normal;
-    
 }
 
 .transparent {
@@ -89,46 +89,26 @@ header > .link > h1 {
     -webkit-text-stroke-color: var(--cor_principal);
 }
 
-.link {
-    position: relative;
-}
 
-.link::after {
-    content: "";
-    background-image: linear-gradient(to left, red,blue);
-    width: 100%;
-    height: 2px;
-    display: block;
-    transform: scaleX(0);
-    transition: transform 0.25s ease-in-out;
-    transform-origin: 100%;
-}
-
-.link:hover::after {
-    background-image: linear-gradient(to left, red,blue);
-    transform: scaleX(1);
-    transform-origin: 0;
-}
-
-header > p {
+header > #header-container > div > p {
     color: #fff;
 }
 
 .btn_1 {
-    font-size: 0.9rem;
-    width: 300px;
-    height: 50px;
+    font-family: var(--font_principal);
+    font-size: 1rem;
+    font-weight: 200;
+    width: 60%;
+    height: 55px;
     border-radius: 25px;
     background-image: linear-gradient(to left,#e3b869,#d29a31);
     color: #fff;
+    padding: 5px;
     
     border: 1px solid var(--cor_principal);
     box-shadow: 0px 15px 20px #dca745c2;
     cursor: pointer;
-    animation-name: animacao;
-    animation-duration: 0.25s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation: animacao 0.25s infinite alternate;
 }
 
 .btn_1:hover {
@@ -172,6 +152,10 @@ main {
     color: #fff;
 }
 
+#icon {
+    background-color: #323232;
+}
+
 .foto2_main {
     margin-top: 30px;
 }
@@ -195,6 +179,7 @@ main {
     background-position: center;
     background-size: cover;
     height: 400px;
+    padding: 0px 20px;
 }
 
 .oportunidade_unica > h1 {
@@ -248,6 +233,7 @@ main {
 .div_selos > section > h1 {
     font-family: var(--font_principal);
     font-weight: 900;
+    padding-bottom: 20px;
 }
 
 .selos {
@@ -292,7 +278,7 @@ main {
     text-align: center;
     background-color: #474747;   
     width: 100%;
-    padding: 20px;
+    padding: 40px 40px;
 }
 
 .div_depoimentos > h1 {
@@ -311,6 +297,7 @@ main {
 }
 
 .div_produtos {
+    width: 100%;
     position: relative;
     background-color: #000000;
     display: flex;
@@ -346,7 +333,7 @@ main {
     border-radius: 10px;
     border: 1px solid #fff;
     box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.3);
-    width: 90%;
+    width: 80%;
     height: 620px;
 }
 
@@ -391,7 +378,7 @@ main {
     border-radius: 10px;
     box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.3);
     border: 1px solid var(--cor_principal);
-    width: 90%;
+    width: 80%;
     height: 705px;
     margin-top: 200px;
     padding: 0px 10px;
@@ -433,7 +420,7 @@ main {
     border-radius: 10px;
     box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.3);
     border: 1px solid #fff;
-    width: 90%;
+    width: 80%;
     height: 650px;
     margin-top: 100px;
     margin-bottom: 50px;
@@ -495,19 +482,43 @@ main {
     padding-top: 20px;
 }
 
-#accordionFlushExample {
+#container_perguntas {
+    background-color: #c09292;
     width: 90%;
-    border: 1px solid #b98b35;
 }
 
-.accordion-button {
-    background-color: #b98b35;
-    color: #fff;
+#perguntas_conteudo {
+    display: none;
 }
 
-.accordion-button:not(.collapsed) {
-    background-color: var(--cor_principal);
-    color: #fff;
+#icon {
+    cursor: pointer;
+}
+
+#container-perguntas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    details {
+        text-align: justify;
+        margin: 3px 35px;
+        padding: 10px;
+        border: 3px solid #b2790e;
+        border-radius: 12px;
+
+        summary {
+            color: #fff;
+        }
+
+        p {
+            background-color: #e0bf83;
+            margin: 10px -10px -10px -10px;
+            padding: 5px;
+            border-radius: 0px 0px 10px 10px;
+        }
+    }
+
 }
 
 div .contato {

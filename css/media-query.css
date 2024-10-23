@@ -1,0 +1,77 @@
+@media screen and (min-width: 768px) {
+
+    header {
+        background-size: cover;
+    }
+
+    #header-container {
+        display: flex;
+        flex-direction: row;
+        height: 650px;
+        width: 100%;
+    }
+
+    header > h2 {
+        font-size: 1.8rem;
+    }
+
+    header >  h1 {
+        font-size: 4.6rem;
+        line-height: 3.5rem;
+    }
+
+    main > #container_main > .foto1_main img {
+        width: 300px;
+    }
+
+    #container_main {
+        padding: 50px;
+    }
+
+    #container_main > h1,h2 {
+        font-size: 4rem;
+        line-height: 3rem;
+        width: 600px;
+    }
+
+    .oportunidade_unica > h1{
+        font-size: 4rem;
+        line-height: 3rem;
+    }
+
+    .div_selos {
+        padding: 0px 40px;
+    }
+
+    .div_selos > .selos > h1 {
+        font-size: 3rem;
+    }
+
+    .div_depoimentos {
+        padding-bottom: 60px;
+    }
+
+    .div_depoimentos > h1 {
+        font-size: 4rem;
+    }
+
+    .btn_1 {
+        font-size: 1.2rem;
+    }
+
+    .div_produtos > h1{
+        font-size: 4rem;
+    }
+
+    .produto_1 {
+        width: 70%;
+    }
+
+    .produto_2 {
+        width: 70%;
+    }
+
+    .produto_3 {
+        width: 70%;
+    }
+}
